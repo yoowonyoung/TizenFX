@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://tizen.org/ns/packages" api-version="6" package="Tizen.Newmodule.Tests" version="1.0.0">
+    <profile name="common" />
+    <ui-application appid="Tizen.Newmodule.Tests"
+                    exec="Tizen.Newmodule.Tests.dll"
+                    type="dotnet"
+                    multiple="false"
+                    taskmanage="true"
+                    launch_mode="single">
+    <icon>Tizen.Newmodule.Tests.png</icon>
+    <label>Tizen.Newmodule.Tests</label>
+    </ui-application>
+    <privileges>
+        <privilege>http://tizen.org/privilege/appmanager.launch</privilege>
+    </privileges>
+</manifest>

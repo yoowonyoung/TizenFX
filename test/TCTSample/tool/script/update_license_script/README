@@ -1,0 +1,10 @@
+This script is updating license script in all '.cs' files in TCT package except obj, bin, Properties and res folder.
+If you run 'add_license_script.py' file, all '.cs' files have updated license script as text in 'license_script' file.
+
+How to use 'add_license_script'
+    1. Edit license script as you want to update in 'license_script' file.
+    2. run script.
+        guide : sudo python add_license_script.py {auto or manual} {module_name}
+              -> example : sudo python add_license_script.py auto Applications
+        If you want to update all package, you can use 'sudo python add_license_script.py all'
+

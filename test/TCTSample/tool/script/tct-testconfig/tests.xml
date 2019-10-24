@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./testcase.xsl"?>
+<test_definition>
+  <suite name="tct-testconfig">
+<!--    <set name="tct-bluetooth-tizen-tests">
+      <testcase execution_type="manual" id="Bluetoothconfiguration" purpose="tct-bluetooth-tizen-tests configuration">
+        <description>
+          <steps>
+            <step order="1">
+              <step_desc>The 'tct-bt-helper' web application MUST be installed on the remote device whose address is REMOTE_DEVICE_ADDRESS.
+The tct-bt-helper is included in the tct-bluetooth-tizen-tests package. Install the tct-bluetooth-tizen-tests package on both your test device and the remote Bluetooth device.</step_desc>
+            </step>
+            <step order="2">
+              <step_desc>Turn on the Bluetooth of your test device and the remote device. Make the two devices discoverable to each other.</step_desc>
+            </step>
+            <step order="3">
+              <step_desc>Before manual testing, launch the 'tct-bt-helper' web application installed on the remote device, click 'Register service' on the 'tct-bt-helper', and then execute the TCs tests manually.</step_desc>
+            </step>
+            <step order="4">
+              <step_desc>BLE test device should have at least one characteristic and descriptor information which is writable in its bluetooth low energy service.</step_desc>
+              <expected>TBD</expected>
+            </step>
+          </steps>
+          <test_script_entry test_script_expected_result="0" timeout="90"/>
+        </description>
+      </testcase>
+    </set>-->
+
+
+<!--Add -->
+    <set name="Tizen.Bluetooth.Tests">
+      <testcase component="WebAPI/Tizen/configuration"  execution_type="manual" id="Bluetoothconfiguration" purpose="Tizen.Bluetooth.Tests configuration">
+        <description>
+          <steps>
+            <step order="1">
+              <step_desc>Set the remote address of the Bluetooth device which you are going to use for testing.</step_desc>
+            </step>
+            <step order="2">
+              <step_desc>Recommends to use Tizen mobile phone for testing.</step_desc>
+            </step>
+          </steps>
+          <test_script_entry test_script_expected_result="0" timeout="90"/>
+        </description>
+      </testcase>
+    </set>
+    <set name="Tizen.Bluetooth.Manual.Tests">
+      <testcase component="WebAPI/Tizen/configuration"  execution_type="manual" id="BluetoothManualconfiguration" purpose="Tizen.Bluetooth.Manual.Tests configuration">
+        <description>
+          <steps>
+            <step order="1">
+              <step_desc>Set the remote address of the BLE(Bluetooth Low Energy) device which you are going to use for testing.</step_desc>
+            </step>
+            <step order="2">
+              <step_desc>Set the remote address of the HID(Human Interface Device) device which you are going to use for testing.</step_desc>
+            </step>
+            <step order="3">
+              <step_desc>Set the remote address of the OPP(Object Push Profile) device which you are going to use for testing.</step_desc>
+            </step>
+            <step order="4">
+              <step_desc>Set the remote address of the device which you are going to use for testing.</step_desc>
+            </step>
+          </steps>
+          <test_script_entry test_script_expected_result="0" timeout="90"/>
+        </description>
+      </testcase>
+    </set>
+    <set name="Tizen.System.Tests">
+      <testcase component="WebAPI/Tizen/configuration"  execution_type="manual" id="Systemconfiguration" purpose="Tizen.System.Tests configuration">
+        <description>
+          <steps>
+            <step order="1">
+              <step_desc>SDCard/USB(External storage) should be inserted on target</step_desc>
+            </step>
+          </steps>
+          <test_script_entry test_script_expected_result="0" timeout="90"/>
+        </description>
+      </testcase>
+    </set>
+    <set name="Tizen.Packagemanager.Tests">
+      <testcase component="WebAPI/Tizen/configuration"  execution_type="manual" id="Packagemanagerconfiguration" purpose="Tizen.Packagemanager.Tests configuration">
+        <description>
+          <steps>
+            <step order="1">
+              <step_desc>SdCard should be inserted on target.</step_desc>
+            </step>
+          </steps>
+          <test_script_entry test_script_expected_result="0" timeout="90"/>
+        </description>
+      </testcase>
+    </set>
+    <set name="Tizen.Download.Manual.Tests">
+      <testcase component="WebAPI/Tizen/configuration" execution_type="manual" id="Downloadmanualconfiguration" purpose="Tizen.Download.Manual.Tests configuration">
+        <description>
+          <steps>
+            <step order="1">
+              <step_desc>A network connection capable of accessing the Internet MUST be established.</step_desc>
+            </step>
+          </steps>
+          <test_script_entry test_script_expected_result="0" timeout="90"/>
+        </description>
+      </testcase>
+    </set>
+    <set name="Tizen.Download.Tests">
+      <testcase component="WebAPI/Tizen/configuration" execution_type="manual" id="Downloadconfiguration" purpose="Tizen.Download.Tests configuration">
+        <description>
+          <steps>
+            <step order="1">
+              <step_desc>A network connection capable of accessing the Internet MUST be established.</step_desc>
+            </step>
+          </steps>
+          <test_script_entry test_script_expected_result="0" timeout="90"/>
+        </description>
+      </testcase>
+    </set>
+    <set name="Tizen.Maps.Tests">
+      <testcase component="WebAPI/Tizen/configuration" execution_type="manual" id="Mapsconfiguration" purpose="Tizen.Maps.Tests configuration">
+        <description>          
+          <steps>
+            <step order="1">
+              <step_desc>A network connection capable of accessing the Internet MUST be established.</step_desc>
+            </step>
+            <step order="2">
+              <step_desc>Set the HERE_MAPS_PROVIDER_KEY configure (appid/app_code).</step_desc>
+            </step>
+          </steps>
+          <test_script_entry test_script_expected_result="0" timeout="90"/>
+        </description>
+      </testcase>
+    </set>
+
+    <set name="Tizen.Maps.Manual.Tests">
+      <testcase component="WebAPI/Tizen/configuration" execution_type="manual" id="Mapsconfiguration" purpose="Tizen.Maps.Manual.Tests configuration">
+        <description>
+          <steps>
+            <step order="1">
+              <step_desc>A network connection capable of accessing the Internet MUST be established.</step_desc>
+            </step>
+            <step order="2">
+              <step_desc>Set the HERE_MAPS_PROVIDER_KEY configure (appid/app_code).</step_desc>
+            </step>
+          </steps>
+          <test_script_entry test_script_expected_result="0" timeout="90"/>
+        </description>
+      </testcase>
+    </set>
+
+    <set name="Tizen.PrivacyPrivilegeManager.Manual.Tests">
+      <testcase component="WebAPI/Tizen/configuration" execution_type="manual" id="Mapsconfiguration" purpose="Tizen.PrivacyPrivilegeManager.Manual.Tests configuration">
+        <description>
+          <steps>
+            <step order="1">
+              <step_desc>There should be no '/opt/share/askuser_disable' file on the target</step_desc>
+            </step>
+          </steps>
+          <test_script_entry test_script_expected_result="0" timeout="90"/>
+        </description>
+      </testcase>
+    </set>
+
+<!--
+    <set name="tct-iotconnectivity-client-tizen-tests">
+      <testcase component="WebAPI/Tizen/configuration" execution_type="manual" id="IoTClientconfiguration" purpose="tct-iotconnectivity-client-tizen-tests configuration">
+        <description>
+          <steps>
+            <step order="1">
+              <step_desc>A network connection capable of accessing the Internet MUST be established.</step_desc>
+            </step>
+          </steps>
+          <test_script_entry test_script_expected_result="0" timeout="90"/>
+        </description>
+      </testcase>
+    </set>
+    <set name="tct-iotconnectivity-server-tizen-tests">
+      <testcase component="WebAPI/Tizen/configuration" execution_type="manual" id="IoTServerconfiguration" purpose="tct-iotconnectivity-server-tizen-tests configuration">
+        <description>
+          <steps>
+            <step order="1">
+              <step_desc>A network connection capable of accessing the Internet MUST be established.</step_desc>
+            </step>
+          </steps>
+          <test_script_entry test_script_expected_result="0" timeout="90"/>
+        </description>
+      </testcase>
+    </set>
+-->
+<!--End -->
+
+    <set name="Tizen.Stt.Tests">
+      <testcase component="WebAPI/Tizen/configuration" execution_type="manual" id="Sttconfiguration" purpose="Tizen.Stt.Tests configuration">
+        <description>
+          <steps>
+            <step order="1">
+              <step_desc>In case of TV profile, connect a bluetooth remote controller which has mic.</step_desc>
+            </step>
+          </steps>
+          <test_script_entry test_script_expected_result="0" timeout="90"/>
+        </description>
+      </testcase>
+    </set>
+    <set name="Tizen.VoiceControl.Tests">
+      <testcase component="WebAPI/Tizen/configuration" execution_type="manual" id="VoiceControlconfiguration" purpose="Tizen.VoiceControl.Tests configuration">
+        <description>
+          <steps>
+            <step order="1">
+              <step_desc>In case of TV profile, connect a bluetooth remote controller which has mic.</step_desc>
+            </step>
+          </steps>
+          <test_script_entry test_script_expected_result="0" timeout="90"/>
+        </description>
+      </testcase>
+    </set>
+    <set name="Tizen.Push.Tests">
+      <testcase component="WebAPI/Tizen/configuration" execution_type="manual" id="Pushconfiguration" purpose="Tizen.Push.Tests configuration">
+        <description>
+          <steps>
+            <step order="1">
+              <step_desc>A network connection capable of accessing the Internet MUST be established.</step_desc>
+            </step>
+          </steps>
+          <test_script_entry test_script_expected_result="0" timeout="90"/>
+        </description>
+      </testcase>
+    </set>
+    <set name="Tizen.WiFi.Manual.Tests">
+      <testcase component="WebAPI/Tizen/configuration" execution_type="manual" id="WiFiconfiguration" purpose="Tizen.WiFi.Manual.Tests configuration">
+        <description>
+          <steps>
+            <step order="1">
+              <step_desc>Set name of available AP with WPS PBC function.</step_desc>
+            </step>
+            <step order="2">
+              <step_desc>Set name of available AP with WPS PIN function.</step_desc>
+            </step>
+            <step order="3">
+              <step_desc>Set pin number of WPS_PIN_AP to PIN_NUMBER_WPS_PIN_AP. The pin number should be generated with the checksum defined in WSC spec (Wi-Fi Simple Configuration Technical Specification). The length of WPS PIN number should be 4 or 8. If you are not familiar with it, please use an example number, 47363533.</step_desc>
+            </step>
+          </steps>
+          <test_script_entry test_script_expected_result="0" timeout="90"/>
+        </description>
+      </testcase>
+    </set>
+
+    <set name="Tizen.Messages.Tests">
+      <testcase component="WebAPI/Tizen/configuration" execution_type="manual" id="Messagesconfiguration" purpose="Tizen.Messages.Tests configuration">
+        <description>
+          <steps>
+            <step order="1">
+              <step_desc>Insert the available SIM Card into SIM slot 1.</step_desc>
+            </step>
+            <step order="2">
+              <step_desc>Set the MESSAGES_MOBILE_NUMBER configure.(example>01012345678)</step_desc>
+            </step>
+          </steps>
+          <test_script_entry test_script_expected_result="0" timeout="90"/>
+        </description>
+      </testcase>
+    </set>
+
+    <set name="Tizen.Device.Tests">
+      <testcase component="WebAPI/Tizen/configuration" execution_type="manual" id="Deviceconfiguration" purpose="Tizen.Device.Tests configuration">
+        <description>
+          <steps>
+            <step order="1">
+              <step_desc>Charger should be connected to test target.(In case of Emulator, you have to set with control panel.) </step_desc>
+            </step>
+          </steps>
+          <test_script_entry test_script_expected_result="0" timeout="90"/>
+        </description>
+      </testcase>
+    </set>
+
+    <set name="Tizen.Email.Tests">
+      <testcase component="WebAPI/Tizen/configuration" execution_type="manual" id="Emailconfiguration" purpose="Tizen.Email.Tests configuration">
+        <description>
+          <steps>
+            <step order="1">
+              <step_desc>A network connection capable of accessing the Internet MUST be established.</step_desc>
+            </step>
+            <step order="2">
+              <step_desc>Set the email account on your device. Settings > Accounts > Email > Set created accounts.</step_desc>
+            </step>
+          </steps>
+          <test_script_entry test_script_expected_result="0" timeout="90"/>
+        </description>
+      </testcase>
+    </set>
+
+    <set name="Tizen.SyncManager.Tests">
+      <testcase component="WebAPI/Tizen/configuration" execution_type="manual" id="SyncManagerconfiguration" purpose="Tizen.SyncManager.Tests configuration">
+        <description>
+          <steps>
+            <step order="1">
+              <step_desc>A network connection capable of accessing the Internet MUST be established.</step_desc>
+            </step>
+          </steps>
+          <test_script_entry test_script_expected_result="0" timeout="90"/>
+        </description>
+      </testcase>
+    </set>
+
+    <set name="Tizen.SyncManager.Manual.Tests">
+      <testcase component="WebAPI/Tizen/configuration" execution_type="manual" id="SyncManagerManualconfiguration" purpose="Tizen.SyncManager.Manual.Tests configuration">
+        <description>
+          <steps>
+            <step order="1">
+              <step_desc>A network connection capable of accessing the Internet MUST be established.</step_desc>
+            </step>
+          </steps>
+          <test_script_entry test_script_expected_result="0" timeout="90"/>
+        </description>
+      </testcase>
+    </set>
+
+    <set name="Tizen.Wifidirect.Tests">
+      <testcase component="WebAPI/Tizen/configuration" execution_type="manual" id="Wifidirectconfiguration" purpose="Tizen.Wifidirect.Tests configuration">
+        <description>
+          <steps>
+            <step order="1">
+              <step_desc>You should have two additional devices which are connected to each other via wifi-direct. (Used to get the status of connected devices.) </step_desc>
+            </step>
+          </steps>
+          <test_script_entry test_script_expected_result="0" timeout="90"/>
+        </description>
+      </testcase>
+    </set>
+
+    <set name="Tizen.WiFi.Tests">
+      <testcase component="WebAPI/Tizen/configuration" execution_type="manual" id="WiFiconfiguration" purpose="Tizen.WiFi.Tests configuration">
+        <description>
+          <steps>
+            <step order="1">
+              <step_desc>Set available private AP name 1.</step_desc>
+            </step>
+            <step order="2">
+              <step_desc>Set available private AP name 2.</step_desc>
+            </step>
+            <step order="3">
+              <step_desc>Set available hidden AP name.</step_desc>
+            </step>
+            <step order="4">
+              <step_desc>Set common password of all private APs.</step_desc>
+            </step>
+          </steps>
+          <test_script_entry test_script_expected_result="0" timeout="90"/>
+        </description>
+      </testcase>
+    </set>
+
+    <set name="Tizen.Connection.Tests">
+      <testcase component="WebAPI/Tizen/configuration" execution_type="manual" id="Connectionconfiguration" purpose="Tizen.Connection.Tests configuration">
+        <description>
+          <steps>
+            <step order="1">
+              <step_desc>Set available public AP name.</step_desc>
+            </step>
+            <step order="2">
+              <step_desc>Set available private AP name.</step_desc>
+            </step>
+            <step order="3">
+              <step_desc>Set common password of all private APs.</step_desc>
+            </step>
+          </steps>
+          <test_script_entry test_script_expected_result="0" timeout="90"/>
+        </description>
+      </testcase>
+    </set>
+
+   <set name="Tizen.MediaPlayer.Tests">
+      <testcase component="WebAPI/Tizen/configuration" execution_type="manual" id="MediaPlayerconfiguration" purpose="Tizen.MediaPlayer.Tests configuration">
+        <description>
+          <steps>
+            <step order="1">
+              <step_desc> Set the streaming uri such as http://www.samsung.com/xx/xx/aa.mp4.</step_desc>
+            </step>
+	    <step order="2">
+              <step_desc> Set the adaptive streaming url.</step_desc>
+            </step>
+          </steps>
+          <test_script_entry test_script_expected_result="0" timeout="90"/>
+        </description>
+      </testcase>
+    </set>
+
+   <set name="Tizen.WebView.Tests">
+      <testcase component="WebAPI/Tizen/configuration" execution_type="manual" id="WebViewconfiguration" purpose="Tizen.WebView.Tests configuration">
+        <description>
+          <steps>
+            <step order="1">
+              <step_desc> Target has to connect to internet</step_desc>
+            </step>
+          </steps>
+          <test_script_entry test_script_expected_result="0" timeout="90"/>
+        </description>
+      </testcase>
+    </set>
+
+   <set name="Tizen.Usb.Tests">
+      <testcase component="WebAPI/Tizen/configuration" execution_type="manual" id="WebViewconfiguration" purpose="Tizen.Usb.Tests configuration">
+        <description>
+          <steps>
+            <step order="1">
+              <step_desc> The usb-host emulation driver MUST be loaded before testing.</step_desc>
+            </step>
+            <step order="2">
+              <step_desc> $ devicectl usb-host-test start</step_desc>
+            </step>
+          </steps>
+          <test_script_entry test_script_expected_result="0" timeout="90"/>
+        </description>
+      </testcase>
+    </set>
+  </suite>
+</test_definition>
+

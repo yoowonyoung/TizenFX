@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>tizen60</TargetFramework>
+  </PropertyGroup>
+
+  <Import Project="..\..\Common\dependencies.props" />
+
+  <!-- Include Nuget Package for Xamarin building -->
+    <ItemGroup>
+      <PackageReference Include="Tizen.Xamarin.Forms.Extension" Version="$(TizenXamarinFormsExtensionVersion)" />
+      <PackageReference Include="Xamarin.Forms" Version="$(XamarinFormsVersion)" />
+      <PackageReference Include="Xamarin.Forms.Maps" Version="$(XamarinFormsVersion)" />
+      <PackageReference Include="Xamarin.Forms.Maps.Tizen" Version="$(XamarinFormsTizenVersion)" />
+      <PackageReference Include="Xamarin.Forms.Platform.Tizen" Version="$(XamarinFormsTizenVersion)" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\..\nunit.framework\nunit.framework.csproj" />
+      <ProjectReference Include="..\..\nunitlite\nunitlite.csproj" />
+    </ItemGroup>
+</Project>
